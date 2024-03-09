@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="Random"></h1>
+    <p id="break"></p>
+    
+    <script>
+        let ran = Math.floor(Math.random() * 1001)
+        document.getElementById("Random").innerHTML = "The random generated number is :" + ran;
+        var h = Math.floor(ran / 100) * 100;
+        var o = Math.floor(ran % 10);
+        var t = Math.floor(ran % 100) - o;
+        document.getElementById("break").innerHTML = "Breakdown: " + h + " , " + t + " , " + o;
+</script>
+    
+
+</body>
+</html>
